@@ -1,6 +1,8 @@
 # 🛠️ WhatsApp Remote PC Gateway: Setup Guide
 
-This guide covers how to set up a secure, Go-based remote administration tool that allows you to control your Windows PC via WhatsApp.## 1. Prerequisites & Environment Setup
+This guide covers how to set up a secure, Go-based remote administration tool that allows you to control your Windows PC via WhatsApp.
+
+## 1. Prerequisites & Environment Setup
 
 To keep the bot secure, we use an `.env` file to store sensitive credentials.
 
