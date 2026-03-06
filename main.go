@@ -228,6 +228,12 @@ func eventHandler(client *whatsmeow.Client) whatsmeow.EventHandler {
 
 func main() {
 	ctx := context.Background()
+	go func() {
+		for {
+			time.Sleep(5 * time.Minute)
+			fmt.Println(">> Heartbeat: Keeping background process active...")
+		}
+	}()
 	dbLog := waLog.Stdout("Database", "INFO", true)
 	clientLog := waLog.Stdout("Client", "INFO", true)
 	dbPath := "file:session.db?_pragma=foreign_keys(1)"
