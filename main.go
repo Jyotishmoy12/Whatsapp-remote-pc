@@ -209,7 +209,7 @@ func eventHandler(client *whatsmeow.Client) whatsmeow.EventHandler {
 			}
 			if reply == "ACTION_SHUTDOWN" {
 				client.SendMessage(context.Background(), v.Info.Sender, &waE2E.Message{
-					Conversation: proto.String("🔌 Shutting down PC in 5 seconds... Goodbye!"),
+					Conversation: proto.String("Shutting down PC in 5 seconds... Goodbye!"),
 				})
 				time.Sleep(5 * time.Second)
 				exec.Command("shutdown", "/s", "/t", "0").Run()
@@ -217,7 +217,7 @@ func eventHandler(client *whatsmeow.Client) whatsmeow.EventHandler {
 
 			if reply == "ACTION_RESTART" {
 				client.SendMessage(context.Background(), v.Info.Sender, &waE2E.Message{
-					Conversation: proto.String("🔄 Restarting PC... I'll be back online in a minute."),
+					Conversation: proto.String("Restarting PC... I'll be back online in a minute."),
 				})
 				time.Sleep(5 * time.Second)
 				exec.Command("shutdown", "/r", "/t", "0").Run()
