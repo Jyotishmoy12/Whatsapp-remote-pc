@@ -17,7 +17,9 @@ OWNER_LID: Your WhatsApp LID (found in the terminal logs during the first run).
 
 - **whatsmeow**: For the WhatsApp protocol.
 - **kbinani/screenshot**: For capturing the desktop.
-- **joho/godotenv**: For loading your .env variables.## 2. The Commands
+- **joho/godotenv**: For loading your .env variables.
+-
+## 2. The Commands
 
 Once the bot is running, you can send these commands to yourself on WhatsApp:
 
